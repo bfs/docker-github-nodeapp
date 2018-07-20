@@ -19,7 +19,7 @@ fi
 export BROWSER=none
 
 #make sure we're listening
-find . -type f -name "package.json" -exec sed -i 's/webpack-dev-server /webpack-dev-server --host 0.0.0.0 /g' {} +
+find . -type f -name "package.json" -exec sed -i 's/webpack-dev-server /webpack-dev-server --disable-host-check --public --host 0.0.0.0 /g' {} +
 
 
 #export NODE_ENV="production"
